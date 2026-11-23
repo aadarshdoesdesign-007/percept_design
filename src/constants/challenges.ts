@@ -1,0 +1,73 @@
+import { ChallengePreview } from '../types';
+
+export const DAILY_CHALLENGES: ChallengePreview[] = [
+  {
+    id: 'drill-kerning',
+    index: '01 / 03',
+    title: 'The Optical Kerning Lab',
+    discipline: 'Typography',
+    track: 'TYPOGRAPHIC EQUILIBRIUM',
+    description: 'Mechanical grids space letters by bounding box boundaries. The eye evaluates internal counter-spaces. Calibrate displaced glyphs into optical rhythm.',
+    estimatedMinutes: 1,
+    toleranceMetric: '±2px Delta Threshold',
+    benchmarkOrigin: 'Editorial Display Masters',
+    status: 'ready',
+    keyConcepts: [
+      'Optical volume vs bounding box',
+      'Negative tracking on diagonal stems (A, V, W)',
+      'Internal whitespace balancing',
+    ],
+    specs: {
+      targetSystem: 'Display Neo-Grotesk (AVALANCHE / MINIMUM)',
+      samplePrompt: 'Adjust displaced stem to achieve equal perceptual volume between adjacent counter-spaces.',
+      evaluationMethod: 'Continuous Euclidean delta from optical baseline coordinate',
+      targetAccuracy: '≥ 92% Perceptual Precision',
+    },
+  },
+  {
+    id: 'drill-rogue',
+    index: '02 / 03',
+    title: 'Rogue Margin & Grid Hunter',
+    discipline: 'Spatial Systems',
+    track: 'SPATIAL RHYTHM',
+    description: 'A design system maintains unbroken reading cadence when padding is consistent. Identify subtle +6px to +12px margin padding breaches across structured modules.',
+    estimatedMinutes: 1,
+    toleranceMetric: '< 50ms Perceptual Latency',
+    benchmarkOrigin: 'Swiss Grid Architecture',
+    status: 'ready',
+    keyConcepts: [
+      '8pt baseline cadence',
+      'Card perimeter margin consistency',
+      'Peripheral anomaly recognition',
+    ],
+    specs: {
+      targetSystem: 'Multi-column Article Card Grid (p-6 vs rogue p-9)',
+      samplePrompt: 'Spot the defective component that breaches the design token constraint in under 5 seconds.',
+      evaluationMethod: 'Single-click instantaneous verification with negative shake feedback',
+      targetAccuracy: '100% Zero-Fault Detection',
+    },
+  },
+  {
+    id: 'drill-spatial',
+    index: '03 / 03',
+    title: 'CEED Spatial Cube Unfolding',
+    discipline: 'Aptitude & Spatial Logic',
+    track: 'GEOMETRIC APTITUDE',
+    description: 'Competitive design aptitude questions sourced from CEED and UCEED entrance benchmarks. Mentally manipulate 3D volumes, cross-sections, and geometric transformations.',
+    estimatedMinutes: 2,
+    toleranceMetric: 'Exact Spatial Deductive Match',
+    benchmarkOrigin: 'CEED / UCEED Entrance Suite',
+    status: 'ready',
+    keyConcepts: [
+      '3D Isometric volume reduction',
+      'Edge vs corner vs face painted counts',
+      'Orthographic transformation',
+    ],
+    specs: {
+      targetSystem: 'Solid 3×3×3 painted cube cut into 27 equal units',
+      samplePrompt: 'Determine how many small cubes have exactly two painted faces.',
+      evaluationMethod: 'Constrained multi-choice verification with step-by-step geometric proof',
+      targetAccuracy: '1st Attempt Deductive Precision',
+    },
+  },
+];
